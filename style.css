@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(239, 239, 239);
+}
+
+.init-container{
+    display: flex;
+}
+.leftside{
+    height: 100vh;
+    width: 70%;
+    background-image: url("background.jpg");
+    background: #ffffff url("background.jpg") no-repeat right top;
+    background-size: cover;
+
+    color: #ffffff;
+    
+    padding-top: 90px;
+}
+
+h1{
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.416);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightside{
+    height: 100vh;
+    width: 100%;
+    padding: 30px 0px 20px;
+}
+
+.rightside p {
+    font-weight: 800;
+    padding-bottom: 20px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h2{
+    padding-left: 30px;
+}
+
+form{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.496);
+}
+
+.form-inputs {
+    width: 100%;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.rightside .form-inputs > * {
+    margin-top: 20px;
+}
+
+.rightside .form-inputs > * > *{
+    width: 100%;
+}
+
+label{
+    color: rgb(122, 122, 122);
+}
+textarea{
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 5px;
+
+}
+
+input{
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding-left: 5px;
+}
+
+input:focus,
+textarea:focus{
+    padding: 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.214);
+}
+
+input:focus:invalid,
+textarea:focus:invalid{
+    border: 4px solid red;
+}
+input:focus:valid,
+textarea:focus:valid{
+    border: 4px solid green;
+}
+
+
+button {
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
